@@ -1,0 +1,71 @@
+.app {
+   display: flex;
+   justify-content: center;
+   margin-top: 260px;
+}
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+}
+
+.game {
+   &__header {
+      &-select {
+         padding: 12px;
+         width: 200px;
+         border-radius: 10px;
+         cursor: pointer;
+      }
+      &-button {
+         width: 120px;
+         margin-left: 14px;
+         padding: 12px;
+         font-weight: 700;
+         border: 1px solid #005b96;
+         background-color: #005b96;
+         border-radius: 10px;
+         cursor: pointer;
+         color: #fff;
+         &:hover {
+            border: 1px solid #005b76;
+            background-color: #005b76;
+         }
+      }
+   }
+   &__main {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      &-cell {
+         width: 60px;
+         height: 60px;
+         border: 1px solid #005b96;
+         transition: ease-in 0.1s;
+         &.filled {
+            border: 1px solid #000;
+            background-color: #005b96;
+         }
+      }
+   }
+}
+
+.information {
+   margin-left: 40px;
+   &__title {
+      font-size: 34px;
+   }
+   &__items {
+      margin-top: 20px;
+      overflow: auto;
+      height: 320px;
+   }
+   &__item {
+      margin-bottom: 10px;
+      font-weight: 700;
+      color: #907444;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #fbf8e3;
+      border: 1px solid #faedcf;
+   }
+}
