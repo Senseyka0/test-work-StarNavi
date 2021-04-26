@@ -17,10 +17,6 @@ const App = () => {
    useEffect(() => {
       setIsLoaded(false);
 
-      // setTimeout(() => {
-      //    setCellAmount(5);
-      //    setIsLoaded(true);
-      // }, 1000);
       axios.get("http://demo1030918.mockable.io/").then(({ data }) => {
          setCellAmount(data[selectedMode].field);
          setIsLoaded(true);
